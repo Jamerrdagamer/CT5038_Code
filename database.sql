@@ -16,7 +16,13 @@ Tables that will be in this sql will be
 
 
 -- Login table
-
+create or alter table login
+(
+    loginID int auto_increment
+        primary key,
+    username varchar(50) not null,
+    password varchar(50) not null
+);
 
 
 -- trees
