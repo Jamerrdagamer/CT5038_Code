@@ -3,7 +3,7 @@ Creating a Data base for Charlton Kings
 
 Tables that will be in this sql will be
 
-    login
+    ID table
     trees
     tree_Adoptions
     observations
@@ -12,16 +12,20 @@ Tables that will be in this sql will be
     animals
 
 ** 1.00 JH Initial Creation 
+** 1.01 JH made changes to change login table to ID table.
 ***************************************************************************************************************************/
 
 
--- Login table
+-- ID table
 create or alter table login
 (
-    loginID int auto_increment
+    IdTable int auto_increment
         primary key,
     username varchar(50) not null,
-    password varchar(50) not null
+    password varchar(50) not null,
+    age varchar(3),
+    userlevel varchar(50)
+    
 );
 
 
